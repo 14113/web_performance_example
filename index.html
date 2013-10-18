@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://www.naucmese.cz/favicon.ico" type="image/x-icon" />
 
     <title>Justified Nav Template for Bootstrap</title>
 
@@ -26,6 +27,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="stylesheets/jquery-ui.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="stylesheets/base.css" rel="stylesheet">
@@ -50,6 +52,11 @@
           <li><a href="#">Downloads</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
+          <li>
+            <form class="form">
+              <input id="search" style="margin-left: 20px;"/>
+            </form>
+          </li>
         </ul>
       </div>
 
@@ -96,6 +103,34 @@
       </div>
 
     </div> <!-- /container -->
+
+    <script>
+  $(function() {
+    var names = [ "Adam Martinik", "Scott González", "John Resig" ];
+
+    var accentMap = {
+      "á": "a",
+      "ö": "o"
+    };
+    var normalize = function( term ) {
+      var ret = "";
+      for ( var i = 0; i < term.length; i++ ) {
+        ret += accentMap[ term.charAt(i) ] || term.charAt(i);
+      }
+      return ret;
+    };
+
+    $( "#search" ).autocomplete({
+      source: function( request, response ) {
+        var matcher = new RegExp( $.ui.autocomplete.escapeRegex( request.term ), "i" );
+        response( $.grep( names, function( value ) {
+          value = value.label || value.value || value;
+          return matcher.test( value ) || matcher.test( normalize( value ) );
+        }) );
+      }
+    });
+  });
+  </script>
 
   </body>
 </html>
