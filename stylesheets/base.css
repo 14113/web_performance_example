@@ -2,40 +2,20 @@ body {
   padding-top: 20px;
 }
 
-.facebook, .linkedin, .twitter, .xing{
-  display: inline-block;
-  background: url('../images/icons/sprites.png') no-repeat;
+h3, .h3 {
+  font-size: 24px;
 }
 
-.facebook{
-  background-position: -75px 0;
-  width: 24px;
-  height: 24px;
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.linkedin{
-  background-position: -50px 0;
-  width: 24px;
-  height: 24px;
-}
-
-.twitter{
-  background-position: -25px 0;
-  width: 24px;
-  height: 24px;
-}
-
-.xing{
-  background-position: 0 0;
-  width: 24px;
-  height: 24px;
-}
-
-.footer {
-  border-top: 1px solid #eee;
-  margin-top: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Main marketing message and sign up button */
@@ -63,6 +43,23 @@ body {
 }
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-justified > li {
+  display: table-cell;
+  width: 1%;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
 
 .nav-justified {
   background-color: #eee;
