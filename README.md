@@ -16,4 +16,4 @@ You can wind for instance:
 * Preloading pages
 * Adding static share buttons
 
-Take a look at the comparison of two tests: http://www.webpagetest.org/video/compare.php?tests=131107_3X_APF, 131107_QP_AJX
+Take a look at the comparison of two tests: http://www.webpagetest.org/video/compare.php?tests=131107_3X_APF,131107_QP_AJX
