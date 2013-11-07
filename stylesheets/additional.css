@@ -27,6 +27,13 @@
   height: 24px;
 }
 
+.share{
+  padding-left: 26px;
+  padding-top: 3px;
+  text-decoration: none;
+  width: 100%;
+}
+
 .footer {
   border-top: 1px solid #eee;
   margin-top: 40px;
