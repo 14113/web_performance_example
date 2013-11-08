@@ -1,6 +1,6 @@
 .facebook, .linkedin, .twitter, .xing{
   display: inline-block;
-  background: url('../images/icons/sprites.png') no-repeat;
+  background: url('https://s3-eu-west-1.amazonaws.com/web-performance/images/sprites.png') no-repeat;
 }
 
 .facebook{
