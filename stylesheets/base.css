@@ -20,13 +20,22 @@ h1, h2, h3 {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  padding: 30px;
   text-align: center;
   background-color: transparent;
   background-color: white !important;
 }
+
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
+}
+
+.lead {
+  font-size: 21px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  line-height: 1.4;
 }
 
 #logo{
@@ -35,12 +44,6 @@ h1, h2, h3 {
 
 #dog{
   height: 200px;
-}
-
-.icon{
-  display: inline-block;
-  height: 24px;
-  width: 24px;
 }
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
