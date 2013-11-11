@@ -1,0 +1,20 @@
+{
+  "name": "web_performance_example",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-connect": "~0.5.0"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "3a8f2c96582a51764bf1fb9a9c0e817cbecdbf0e",
+  "description": "*info: this techniques are just for beginners and for front-end side.*",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/14113/web_performance_example"
+  },
+  "author": "Adam Martinik"
+}
