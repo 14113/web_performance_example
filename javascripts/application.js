@@ -21,6 +21,12 @@ _gaq.push(['_trackPageview']);
 }(document, 'script', 'facebook-jssdk'));
 
 $(function() {
+  $("#changer").click(function(){
+    $("#articles div").each(function(index){
+      $(this).animate({width: $('#size').width()},2000);
+    });
+  });
+
   var names = [ "Adam Martinik", "Scott González", "John Resig" ];
 
   var accentMap = {
