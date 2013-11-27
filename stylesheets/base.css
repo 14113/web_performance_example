@@ -20,6 +20,7 @@ h1, h2, h3 {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  background: white !important;
   text-align: center;
   background-color: transparent;
 }
