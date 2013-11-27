@@ -1,49 +1,37 @@
-body {
-  padding-top: 20px;
-}
-
-h3, .h3 {
-  font-size: 24px;
-}
-
-h1, h2, h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
-#logo{
-  height: 40px;
-}
-
-#dog{
-  height: 200px;
-}
-
-.icon{
+.facebook, .linkedin, .twitter, .xing{
   display: inline-block;
-  height: 24px;
-  width: 24px;
+  background: url('../images/icons/sprites.png') no-repeat;
 }
 
-.ui-autocomplete{
-  z-index: 1000;
+.facebook{
+  background-position: -75px 0;
+  width: 24px;
+  height: 24px;
+}
+
+.linkedin{
+  background-position: -50px 0;
+  width: 24px;
+  height: 24px;
+}
+
+.twitter{
+  background-position: -25px 0;
+  width: 24px;
+  height: 24px;
+}
+
+.xing{
+  background-position: 0 0;
+  width: 24px;
+  height: 24px;
+}
+
+.footer {
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 @media (min-width: 768px) {
